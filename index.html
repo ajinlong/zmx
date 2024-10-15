@@ -1,0 +1,815 @@
+<html>
+	<head>
+		<title>张旻熙</title>  
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width,viewport-fit=cover" >
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="author" content="dawn." />
+		<meta name="Copyright" content="dawn." />
+		<meta name="keywords" content="avp_testa" />
+		<meta name="description" content="avp_testa" />
+
+		<!--调试时关闭缓存，实际时需开启-->
+		<META http-equiv=Pragma content=no-cache>
+		<META http-equiv=Cache-Control content=no-cache>
+		<META http-equiv=Expires content=0>
+
+		<link rel="stylesheet" href="http://bxh.天线罩.中国//static/css/reset.css" type="text/css"/>
+		<link rel="stylesheet" href="http://bxh.天线罩.中国//static/mobile/css/weui.min.css" type="text/css"/>
+		<!--<link rel="stylesheet" href="http://bxh.天线罩.中国//static/mobile/libs/jquery-weui/jquery-weui.min.css" type="text/css"/>
+		<link rel="stylesheet" href="http://bxh.天线罩.中国//static/mobile/css/jquery-weui-app-fix.css" type="text/css"/>
+		-->
+		<link rel="stylesheet" href="http://bxh.天线罩.中国//static/js/swiper/swiper.min.css" type="text/css"/>
+		<link rel="stylesheet" href="http://bxh.天线罩.中国//static/mobile/css/app.css" type="text/css"/>
+        <link rel="stylesheet" href="http://bxh.天线罩.中国//static/css/selectpage.css?v=6"  type="text/css">
+		<script type="text/javascript">
+			// 全局定义
+			var _MODULE_URL_='http://bxh.天线罩.中国/';
+			
+			// 应用全局变量
+			var _IS_USER_FOLLOWED='0';
+			var _IS_USER_INFOED='0';
+		</script>
+
+		
+<script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+<script type="text/javascript">
+	window.sysinfo = window.sysinfo || {"uniacid":1,"acid":"1","siteroot":"http:\/\/kqvtm58cdswi0or.xn--wmqy02ajlc5u5b1ga798i.xn--xhq521b\/","siteurl":"http:\/\/kqvtm58cdswi0or.xn--wmqy02ajlc5u5b1ga798i.xn--xhq521b\/app\/index.php?i=1&c=entry&cmd=iouts&do=index&m=vp_ph","attachurl":"http:\/\/wszasd.xn--lms17gwych1ah8prxyri0c.xn--fiqs8s\/uploads\/","cookie":{"pre":"9df6_"},"openid":"omp_L6ZKFenYdSAz-SlYZ4XCnZos","MODULE_URL":"http:\/\/bxh.\u5929\u7ebf\u7f69.\u4e2d\u56fd\/"} || {};
+	
+	// jssdk config 对象
+	jssdkconfig = {"appId":"wx8d76ddbfc16263ad","nonceStr":"JZC5qCv5V7Vkb377","timestamp":"1728995498","signature":"e04ecbd649f20df41df8e79b08789cd94f719bac"} || {};
+	
+	// 是否启用调试
+	jssdkconfig.debug = false;
+	
+	jssdkconfig.jsApiList = [
+		'checkJsApi',
+		'onMenuShareTimeline',
+		'onMenuShareAppMessage',
+		'onMenuShareQQ',
+		'onMenuShareWeibo',
+		'hideMenuItems',
+		'showMenuItems',
+		'hideAllNonBaseMenuItem',
+		'showAllNonBaseMenuItem',
+		'translateVoice',
+		'startRecord',
+		'stopRecord',
+		'onRecordEnd',
+		'playVoice',
+		'pauseVoice',
+		'stopVoice',
+		'uploadVoice',
+		'downloadVoice',
+		'chooseImage',
+		'previewImage',
+		'uploadImage',
+		'downloadImage',
+		'getNetworkType',
+		'openLocation',
+		'getLocation',
+		'hideOptionMenu',
+		'showOptionMenu',
+		'closeWindow',
+		'scanQRCode',
+		'chooseWXPay',
+		'openProductSpecificView',
+		'addCard',
+		'chooseCard',
+		'openCard',
+		'openAddress',
+		'editAddress'
+	];
+
+	jssdkconfig.openTagList = [
+		'wx-open-launch-weapp',
+		'wx-open-launch-app'
+	];
+
+	wx.config(jssdkconfig);
+	
+</script> <!-- 注册调用微信js_api 放到其他引入的 js 之前 -->
+		
+	</head>
+
+	<body ontouchstart="" style="position:relative" data-weui-theme='light'>
+<script type="text/javascript">
+	wx.ready(function () {
+		wx.hideAllNonBaseMenuItem();
+	});
+</script>
+
+<style>
+	#main_list{margin-top:0;padding-bottom:10px;}
+	#main_list h4{font-size:12px;color:#bbbbbb}
+	#main_list i{width:16px;height:16px;}
+	.feed-item{background:#FFFFFF;margin:0 10px 10px 10px;border:0 none;border-radius:5px;overflow:hidden}
+	.feed-item .weui-cell{padding:15px;}/**-webkit-box-align:stretch;-webkit-align-items:stretch;align-items:stretch;**/
+
+	
+		
+	#images_box{margin:5px 15px 5px 0;overflow:hidden;zoom:1;}
+	#images_box:after{content:"";display:block;height:0;line-height:0;clear:both;visibility:hidden;}
+	#images_box li{float:left;margin:0 5px 0 0;width:60px;height:60px;overflow:hidden;}
+	#images_box li a{display:block;width:60px;height:60px;line-height:60px;text-align:center;overflow:hidden;}
+	#images_box li a img{height:100%;width:100%;object-fit:cover;}
+	#image_adder a{background:url("http://bxh.天线罩.中国//static/mobile/images/image_adder_normal.png");background-size:60px 60px;}
+
+
+    .btn-feedback {    background: #576b95;
+    margin-left: 8px;
+    border: #576b95;
+    border-radius: 5px;
+    padding: 5px 10px;}
+    .ttab-wrap  {background:#f4f4f4}
+    .page-wrap {margin:0 auto;display:block;}
+    .page-wrap .pagination {
+        margin: 10px auto;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .pagination {
+        display: inline-block;
+        padding-left: 0;
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+    .pagination>li {
+        display: inline;
+    }
+    .pagination>li:first-child>a, .pagination>li:first-child>span {
+        margin-left: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .pagination>li>a, .pagination>li>span {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        margin-left: -1px;
+        line-height: 1.42857143;
+        color: #337ab7;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+    .pagination>li>a.normal, .pagination>li>span.normal {
+        color: #000;
+    }
+</style>
+
+<div>
+
+		<style>
+	.ttab{position:fixed;z-index:1;top:0;left:0;width:100%;height:50px;}
+	.ttab-wrap{display:-webkit-box; display:-webkit-flex; display:-ms-flexbox;display:flex;text-align:center;}
+	.ttab-item{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-tap-highlight-color:transparent;font-weight:bold;display:block;height:50px;line-height:50px;font-size:14px;}
+	.ttab-item a{display:block;color:#000000;}
+	.ttab-item.selected{font-size:16px;background:url('http://bxh.天线罩.中国//static/mobile/images/tab_selected.png') no-repeat center 38px;background-size:14px;}
+</style>
+<div class="ttab" id="ttab">
+	<div class="ttab-wrap"  style="text-align:center;">
+		<div class="ttab-item "><a href="./index.php?i=1&c=entry&cmd=iins&do=index&m=vp_ph">留的纸条</a></div>
+		<div class="ttab-item selected"><a href="./index.php?i=1&c=entry&cmd=iouts&do=index&m=vp_ph">抽中纸条</a></div>
+		<div class="ttab-item "><a href="./index.php?i=1&c=entry&do=index&m=vp_ph">抽个对象</a></div>
+
+				<div class="ttab-item "><a href="./index.php?i=1&c=entry&do=agent&m=vp_ph" >我开分店</a></div>
+				
+			</div>
+</div>
+	<div style="height:50px;"></div>
+		<div>
+		<div class="mtab">
+			<div class="vp-flex">
+				<div class="vp-flex_1"><a href="./index.php?i=1&c=entry&cmd=iins&do=index&m=vp_ph" class="mtab-item">我放入的纸条</a></div>
+				<div class="vp-flex_1"><a href="./index.php?i=1&c=entry&cmd=iouts&do=index&m=vp_ph" class="mtab-item selected">我抽到的纸条</a></div>
+			</div>
+		</div>
+	</div>
+	<div>
+		
+		<!-- 列表 -->
+		<div id="main_list" data-url="" data-loading=0 data-start=0 data-more=1 ></div>
+		
+				<!--列表模板-->
+		<script id="feed_list_tpl" type="text/template" >
+			<%
+				if(!list || list.length==0){
+			%>
+					<div style="padding:30px 0;text-align:center;font-size:14px;color:#999999;">我还没有抽取过交友纸条</div>
+			<%
+				}
+				for(var i=0;i<list.length;i++){
+					var item = list[i];
+			%>	
+				<div class="feed-item" id="pair_<%=item.id%>">
+					<div class="weui-cell" style="padding-bottom:10px;">
+						<div class="weui-cell__bd">
+							<% if(item.sex==1){ %><span style="color:#4e86ec">[男生]</span><%  } %>
+							<% if(item.sex==2){ %><span style="color:#ec4eb3">[女生]</span><%  } %>
+							 <%=item.city%>
+							 <%=item.prop1%>
+							 <%=item.prop2%>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__bd">
+							<div>
+								<%=item.content%>，聊骚勿扰。
+							</div>
+							<%
+								if(item.images && item.images.length>0){
+							%>
+							<div style="margin-top:8px;">
+								<%
+									for(var j=0;j<item.images.length;j++){
+										var img = item.images[j];
+								%>	
+									<img class="feed-img" src="<%=img.url%>" data-src="<%=img.url%>" style="width:80px;height:80px;margin-right:2px;object-fit:cover;" />
+								<%  } %>
+							</div>
+							<%  } %>
+						</div>
+					</div>
+					
+											<%
+							if(item.contact){
+						%>
+							<div class="weui-cell" style="padding: 10px 15px;">
+								<div class="weui-cell__bd">
+									<%=(item.sex==1?'他':'她')%>留的<%=item.ctype=='wx'?'微信号':''%><%=item.ctype=='qq'?'QQ号':''%>：<%=item.contact%>
+								</div>
+								<div class="weui-cell__ft">
+									<a class="btnm btnm-warn btn-copyer"  href="javascript:" data-clipboard-text="<%=item.contact%>">复制</a>
+									<% if(item.feedback_status == 0 && item.feedback_timeout == 0){ %>
+									<a class="btnm btn-feedback" style="margin-left:8px"  href="javascript:" data-id="<%=item.ufid%>">更换纸条</a>
+									<%  } %>
+									<% if(item.feedback_status == 1){ %>
+									<a class="btnm btn-feedback" style="margin-left:8px" href="javascript:" data-status="1" data-id="<%=item.ufid%>">申请处理中</a>
+									<%  } %>
+									<% if(item.feedback_status == 2){ %>
+									<a class="btnm btn-feedback" style="margin-left:8px"  href="javascript:" data-status="2" data-content="<%=item.feedback_remark%>" data-id="<%=item.ufid%>">申请失败</a>
+									<%  } %>
+									<% if(item.feedback_status == 3){ %>
+									<a class="btnm btn-feedback" style="margin-left:8px"  href="javascript:" data-status="3" data-content="<%=item.feedback_remark%>" data-id="<%=item.ufid%>">重新获取</a>
+									<%  } %>
+								</div>
+							</div>
+							<div class="weui-cell"  style="padding: 10px 15px;align-items: center;display: flex;flex:1;">
+								<div class="weui-cell__bd" style="flex:">
+									<h2>搜索不到点教程</h2>
+								</div>
+								<div class="weui-cell__ft">
+							<!--	<a class="btnm" style="border: 1px solid #cfcfcf;background: #efefef;color: #505050;font-weight: normal;" href="http://hhh.rruwgfbjyf.shop/app/index.php?i=1&c=entry&cmd=page&id=714Ng&do=public&m=vp_ph">更换jc</a>-->
+							<a style="margin-left:8px;display: inline-block;
+    padding: 2px 8px;
+    border: 2px solid #000;
+    background: #000;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 100px;" href="https://docs.qq.com/doc/DZU1md2ZSc3htRmdx">教程</a></h2>
+									<a class="btnm btn-copyer btn-del" style="margin-left:8px"  href="javascript:" data-del="<%=item.ufid%>">删除记录</a>
+								</div>
+							</div>
+						<%
+							}else{
+						%>
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									很可惜，<%=(item.sex==1?'他':'她')%>没有留下联系方式
+								</div>
+								<div class="weui-cell__ft">
+								</div>
+							</div>
+						<%  } %>
+									
+					</div>
+				</div>
+			<%  } %>
+		</script>
+	</div>
+
+	<!--
+		等待审核	：等待审核，【修改】
+		审核通过	：已有xx人抽到过，【销毁】
+		审核拒绝	：拒绝原因，【修改】
+	-->
+
+</div>
+<div id="dialog_feedback" class="js_dialog"  style="display:none;">
+	<div class="weui-mask js_dialog_closer"  style="z-index:998"></div>
+	<div  class="weui-half-screen-dialog" style="background:#F4F4F4;z-index:999">
+		<div class="weui-half-screen-dialog__hd" style="height:6em">
+
+		  <div class="weui-half-screen-dialog__hd__side">
+			<button style="display: none;" class="weui-icon-btn js_dialog_closer">返回<i class="weui-icon-back-arrow-thin"></i></button>
+			<button class="weui-icon-btn js_dialog_closer">关闭<i class="weui-icon-close-thin"></i></button>
+		  </div>
+
+		  <div class="weui-half-screen-dialog__hd__main">
+			<strong class="weui-half-screen-dialog__title">申请更换</strong>
+			<!--<span class="weui-half-screen-dialog__subtitle">每0天可提现一次</span>-->
+		  </div>
+		</div>
+		<div class="weui-half-screen-dialog__bd" style="padding-bottom:20px">
+		    <p style="font-size: 12px;color: red;text-align: center;margin-bottom: 5px;">如不满意结果请联系客.服.Q:347363323</p>
+			<form id="feedback_form" action="" method="post" style="">
+				<input type="hidden" name="cmd" value="feedback"/>
+				<input type="hidden" id="feed_id" name="feed_id" value=""/>
+				<div class="weui-form">
+					<div class="weui-cells weui-cells_form weui-form__text-area" style="padding-bottom: 5px;margin: 0 10px;">
+						<div class="weui-form__control-area22">
+							<div class="weui-cells weui-cells__group_form " style="margin-top:0;">
+								<div class="weui-cell weui-cell_select weui-cell_select-after">
+									<div class="weui-cell__hd"><label for class="weui-label">类型</label></div>
+									<div class="weui-cell__bd">
+									    <select class="weui-select" name="type">
+									        <option selected="" value="微信号搜索不到">微信号搜索不到</option>
+									        <option value="微信号异常">色情与诈骗</option>
+									        <option value="纸条内容违规">纸条有广告</option>
+									        <option value="性别错误">性别错误</option>
+									        <option value="没有留下微信号">没有联系方式</option>
+									        <option value="其他问题">其他问题</option>
+								        </select>
+										<!--<input name="money" class="weui-input"  placeholder="8~20000" min="8" max="20000" type="number" step="0.01" style="text-align:right;padding-right:3px;" value="0.00"/>-->
+									</div>
+								</div>
+							</div>
+							<div class="weui-cell " style="padding: 10px 20px;align-items: baseline;">
+							    <div class="weui-cell__hd"><label for class="weui-label">遇到问题</label></div>
+					            <div class="weui-cell__bd" style="padding-left:10px;">
+					                <textarea class="weui-textarea" name="content" placeholder="请描述您所发生的问题，会在36小时内处理完成，可获一次抽取机会" rows="3"></textarea>
+					                <div class="weui-textarea-counter"></div>
+				                </div>
+			                </div>
+							<div class="weui-cells">
+								<div class="weui-cell weui-cell_access">
+								    <style>
+        							    .weui-uploader__files {display:inline-block;float:right}
+        							    .weui-uploader__file{width:40px;height:40px}
+        						    </style>
+									<div class="weui-cell__hd"><label class="weui-label">问题截图</label></div>
+									<div class="weui-uploader__bd" style="flex:1" id="uploader">
+										<div class="weui-uploader__input-box" style="height:40px;width:40px;float:right" >
+											<input id="uploaderInput" class="weui-uploader__input" type="file" multiple  accept="image/*"  >
+										</div>
+										<ul class="weui-uploader__files" id="uploaderFiles"></ul>
+								    </div>
+									<!--<div class="weui-cell__bd">
+										<input id="channel_account_picker" readonly class="weui-input"  placeholder="苹果用户双击" style="text-align:right;" value=""/>
+										<input id="channel_account_value" type="hidden" name="account" value=""/>
+									</div>
+									<div class="weui-cell__ft"></div>-->
+								</div>
+								<div class="weui-cell">
+									<div class="weui-cell__hd"><label class="weui-label">你WX号</label></div>
+									<div class="weui-cell__bd">
+										<input name="weixin" class="weui-input"  placeholder="用于处理失败时联系您" style="text-align:right;padding-right:3px;" value=""/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="weui-form__opr-area" style="margin: 16px auto 5px;">
+							<p><a class="weui-btn weui-btn_primary" href="javascript:" id="btn_feedback">提交</a></p>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<link rel="stylesheet" href="./resource/layui/css/layui.css"  media="all">
+<script src="./resource/layui/layui.js" charset="utf-8"></script>
+<script>
+function isChn(str){ 
+    var reg = /^[\u4E00-\u9FA5]+$/; 
+    
+    if(!reg.test(str)){ 
+        return false; 
+    } 
+    
+    return true; 
+}
+</script>
+<script src="http://bxh.天线罩.中国//static/js/jquery/jquery-2.1.3.min.js"></script>
+<!--<script src="http://bxh.天线罩.中国//static/js/jquery/jquery-3.6.0.min.js?v=2"></script>-->
+
+<!--<script src="http://bxh.天线罩.中国//static/mobile/libs/jquery-weui/jquery-weui.min.js"></script>-->
+<script src="http://bxh.天线罩.中国//static/js/fastclick.js?t=1"></script>
+<script src="http://bxh.天线罩.中国//static/js/weui.min.js"></script>
+<script src="http://bxh.天线罩.中国//static/js/template/baiduTemplate.js"></script>
+<script src="http://bxh.天线罩.中国//static/js/swiper/swiper.jquery.min.js"></script>
+<script src="http://bxh.天线罩.中国//static/js/clipboard.min.js"></script>
+<script src="http://bxh.天线罩.中国//static/mobile/libs/html2canvas/1.0.0/html2canvas.min.js"></script>
+<script src="http://bxh.天线罩.中国//static/mobile/js/common.js"></script>
+<script src="http://bxh.天线罩.中国//static/js/selectpage.min.js?v=1231231"></script>
+<!--应用内共通-->
+
+<style>
+	.weui-btn_primary{background:#000000}
+	.weui-btn_primary:not(.weui-btn_disabled):active {background-color: #444444;}
+</style>
+
+	<!-- 微信快捷支付表单 -->
+	<form id="pay_wechat" action="./index.php?i=1&c=mc&a=cash&do=wechat&" method="post">
+		<input id="pay_wechat_params" type="hidden" name="params" value="" />
+	</form>
+
+
+
+
+<!--支付弹出框
+<div id="dialog_pay" class="js_dialog"  style="display:none;">
+	<div class="weui-mask js_dialog_closer" style="z-index:998">
+	</div>
+	<div  class="weui-half-screen-dialog" style="z-index:999;max-height:90%;">
+		<div class="weui-half-screen-dialog__hd">
+		  <div class="weui-half-screen-dialog__hd__side">
+			<button style="display: none;" class="weui-icon-btn js_dialog_closer">返回<i class="weui-icon-back-arrow-thin"></i></button>
+			<button class="weui-icon-btn js_dialog_closer">关闭<i class="weui-icon-close-thin"></i></button>
+		  </div>
+		  <div class="weui-half-screen-dialog__hd__main">
+			<strong class="weui-half-screen-dialog__title">支付</strong>
+		  </div>
+		</div>
+		<div class="weui-half-screen-dialog__bd" style="padding-bottom:0;">
+			<form id="feedout_form" action="" method="post">
+				<input type="hidden" name="cmd" value="feedout"/>
+				<input id="feedout_sex" type="hidden" name="sex" value=""/>
+
+				<div>
+					
+					
+					<div style="margin:15px 0 0 0;">
+						<a id="btn_pay_weixin" class="btn" href="javascript:">微信支付</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="weui-half-screen-dialog__ft">
+			
+		</div>
+	</div>
+</div>
+-->
+
+
+<script type="text/javascript">
+	// 全局公共变量
+	var loading=null;
+	var mine = eval('({"id":"10725900","uniacid":"1","ufo":"0","uid":"10779857","nickname":"","avatar":"","mobile":"","password":null,"openid":"omp_L6ZKFenYdSAz-SlYZ4XCnZos","feedin1":"0","feedin2":"0","feedout1":"0","feedout2":"0","pname":"","pname_edittime":"0","cover":"","images":"","images_edittime":"0","sex":"0","age":"0","height":"0","weight":"0","tagi":"","tagu":"","province":"","city":"","country":"","address":"","lng":"0","lat":"0","distance":"0.00","qq":"","wx":"","coin":"0","coin_in":"0","coin_used":"0","money_in":"0.00","fuid":"5613974","invites":"0","agentp":"5613974","agentp1":"2877497","agentp2":"447805","create_time":"1728992094","is_play":"0","play_time":"0","is_nt":"0","verify_status":"0","verify_remark":"","verify_time":"0","pps":"0","pped":"0","likes":"0","liked":"0","sliked":"0","likedo":"0","slikedo":"0","peeked":"0","peekedo":"0","matched":"0","agent":"0","agent_time":"0","users":"0","agentbs":"0","agentb1s":"0","agentb2s":"0","agent_money":"0.00","agent_money_in":"0.00","agent_money_outcash":"0.00","admin":"0","is_black":"0","is_deny_pay":"0","ld_white":"0","day_feedback_nums":"0","agent_domain":null,"agent_domain_days":null,"agent_domain_time":null,"last_online_time":"1728995498","group_status":"0","group_time":null,"tx_img":null,"tx_account":null,"tx_name":null,"real_mobile":"","real_id":"","real_name":"","_id":"88eMTA3MjU5MDA"})');	// 我当前的信息
+	// var pair = null; // 当前在匹配的对象
+
+	// 全局公共函数
+	var closeDialog=null; 
+
+
+	$(function(){
+		/***
+		var payParams=null;
+		showPay=function(params){
+			payParams=params;
+
+			$('#dialog_pay').fadeIn(200);
+			$('#dialog_pay').find('.weui-half-screen-dialog').addClass('weui-half-screen-dialog_show');
+		}
+
+		payByWixin=function(){
+			util.pay({
+				orderFee : payParams.fee,
+				payMethod : 'wechat',
+				orderTitle : payParams.title,
+				orderTid : payParams.tid,
+				module : 'vp_ph',
+				success : function(result) {
+					alert('支付成功');
+				},
+				fail : function(result) {
+					alert('支付失败：' + result.message);
+				},
+				complete : function(result) {
+					location.reload();
+				}
+			});
+		}
+		// 微信支付
+		$('#btn_pay_weixin').on('click',function(){
+			payByWixin();
+		});
+		**/
+
+		
+		// 客服弹窗
+		$('.btn_to_server').on('click',function(){
+			closeDialog();
+
+			$('#dialog_server').fadeIn(200);
+			$('#dialog_server').find('.weui-half-screen-dialog').addClass('weui-half-screen-dialog_show');
+		});
+
+		// 分享弹窗
+		$('.btn_to_share').on('click',function(){
+			showShare();
+		});
+		
+		
+		// 开启/关闭通知
+		switchNt=function(is_nt){
+			//loading = weui.loading('正在'+(is_nt==1?'开启':'关闭')+'...');
+			$.post('',{
+				cmd:'mine',
+				submit:'nt',
+				is_nt:is_nt
+			},function(resp) {
+				// TODO...
+			});
+
+			$('#xmain').css('margin-top','20px')
+			if(is_nt==1 && _IS_USER_FOLLOWED!=1){
+				$('#dialog_nt').fadeIn(200);
+				$('#dialog_nt').find('.weui-half-screen-dialog').addClass('weui-half-screen-dialog_show');
+			}
+		}
+
+
+		
+		// 弹出窗统一关闭
+		closeDialog=function(){
+			$('.js_dialog').fadeOut(200);
+			$('.js_dialog').find('.weui-half-screen-dialog').removeClass('weui-half-screen-dialog_show');
+		}
+		$('.js_dialog').find('.js_dialog_closer').on('click', function(){
+			// 抛出事件，点击关闭了哪个弹出框
+			//$('body').trigger('vp_close_dialog',$(this).parents('.js_dialog').attr('id'));
+			closeDialog();
+		});
+		
+
+		// 统一复制
+		var clipboard = new ClipboardJS('.btn-copyer');
+		clipboard.on('success', function(e) {
+			weui.toast('复制成功', 2000);
+		});
+
+	});
+</script><script type="text/javascript">
+var uploadCount = 9, uploadList = [], imagesUploaded = false;
+	var allowTypes = ['image/jpg', 'image/jpeg', 'image/png', 'image/gif','image/*'];
+	weui.uploader('#uploader', {
+		url: "./index.php?i=1&c=utility&a=file&do=upload&type=image&group_id=-1",
+		auto: true,
+		type: 'file',
+		fileVal: 'file',
+		onBeforeQueued: function (files) {
+			console.log(files);
+			//$('#uploaderFiles').empty()
+			if (allowTypes.indexOf(this.type) < 0) {
+				weui.toast('图片格式不支持')
+				return false;
+			}
+			if (uploadList.length >= uploadCount) {
+				weui.toast('最多只能上传9张图片');
+				return false;
+			}
+			imagesUploaded = true;
+		},
+		onSuccess: function (res) {
+			imagesUploaded = false;
+			if (res.error) {
+				weui.toast(res.error.message)
+				return true;
+			} else {
+			    console.log(res)
+				//$('#uploader').append('<input class="image_val" type="hidden" name="images[]" value="'+res.url+'" />')
+				var id = $('#uploaderFiles li:last').data('id')
+				$('#uploader').append('<input data-id="'+id+'" class="image_val" type="hidden" name="images[]" value="'+res.attachment+'" />')
+				//$('#channel_account_value').val(res.attachment);
+				//uploadList=[]
+				uploadList.push(res.url)
+			}
+		},
+		onError: function (err) {
+			console.log(err)
+		}
+	});
+	
+	$(function(){
+		
+		var feed_list = $("#main_list");
+		var feed_list_tpl=baidu.template($('#feed_list_tpl').html());
+		var list = new Array();
+		var loadList=function(refresh=true,showloading=false){
+			if(refresh){
+				feed_list.attr('data-start',0);
+				feed_list.attr('data-more',1);
+			}
+
+			if(feed_list.attr('data-loading')==1 || feed_list.attr('data-more')==0){
+				return;
+			}
+			
+			if(showloading){
+				loading = weui.loading('正在加载...');
+			}
+			feed_list.attr('data-loading',1);
+			
+			$.post(feed_list.attr('data-url'), {
+				submit:'list',
+				filt:feed_list.attr('data-filt'),
+				start:feed_list.attr('data-start')
+			},function(resp) {
+				if(loading){
+					loading.hide();
+				}
+				feed_list.attr('data-loading',0);
+				if(resp.status==0){
+					alert(resp.info);
+				}else{
+					list=list.concat(resp.data.list);
+
+					feed_list.attr('data-start',resp.data.start);
+					feed_list.attr('data-more',resp.data.more);
+					/**
+					if(feed_list.attr('data-more')==0){
+						$('#money_list_container').destroyInfinite();
+						$('#money_list_loader').hide();
+					}
+					
+					
+					**/
+					var html='';
+					html=feed_list_tpl(resp.data);
+				
+					
+					if(!refresh){
+						html=feed_list.html()+html;
+					}
+					feed_list.html(html);
+				}
+			});	
+		}
+		
+		// 自动加载历史链接
+		loadList(true,true);
+		// 滚动底部加载更多
+		$(window).scroll(function(){
+		　　var scrollTop = $(this).scrollTop();
+		　　var scrollHeight = $(document).height();
+		　　var windowHeight = $(this).height();
+		　　if(scrollTop + windowHeight == scrollHeight){
+				if(list.attr('data-more')==1){
+		　　　　		loadList(false);
+				}
+		　　}
+		});
+
+		// 预览图片
+		feed_list.on('click','.feed-img',function(){
+			var imgs = $(this).parent().children();
+
+			var imgurls=new Array();
+			$(this).parent().children().each(function(){
+				imgurls.push($(this).data('src'));
+			}); 
+
+			wx.previewImage({
+			  current: $(this).data('src'),
+			  urls: imgurls
+			});
+		});
+		
+		// 统一复制
+		var clipboard = new ClipboardJS('.btn-copyer');
+		clipboard.on('success', function(e) {
+			weui.toast('复制成功', 2000);
+		});
+
+
+		$('#btn_feedback').on('click',function(){
+		    if($('[name=content]').val()==''){
+				weui.alert('请输入您遇到的问题');
+				return;
+			}
+			var form = $('#feedback_form');
+			loading = weui.loading('正在提交...');
+			$.post(form.attr('action'), form.serialize(),function(resp) {
+				loading.hide();
+				console.log(resp)
+				if(resp.status == 0){
+					weui.alert(resp.info);
+				} else {
+					weui.alert(resp.info,function(){
+						location.reload();
+					});
+				}
+			});
+		});
+		
+		// 处理图片
+		$('#uploaderFiles').on('click','.weui-uploader__file',function(){
+			var id=$(this).data('id');
+			weui.confirm('确定移除该项？', function () {
+				$('#uploaderFiles li[data-id='+id+']').remove()
+				$('input[name="images[]"][data-id='+id+']').remove()
+				uploadList.pop()
+			});
+		});
+		
+        $("body").on('click','.btn-feedback',function(){
+			var id = $(this).data("id"),
+			    status = $(this).data("status"),
+			    content = $(this).data("content");
+			if(!id){
+				layer.alert("请选择更换的记录");
+				return;
+			}
+			if(status == 1) {
+			    layer.alert("最迟28小时处理,请稍后...");
+				return;
+			}
+			if(status == 2) {
+			    layer.alert(content?content:"更换失败");
+				return;
+			}
+			if(status == 3) {
+			    layer.confirm("申请通过，获得一次免费抽取机会", {btn: ['重新抽取', '取消'], title: "申请通过"}, function (result, e) {
+                    if(result) {
+                        $.ajax({
+                            type: "post",
+                            url: "./index.php?i=1&c=entry&cmd=feedout2&do=index&m=vp_ph",
+                            data: {id:id},
+                            dataType: "json",
+                            success: function (data) {
+                                if (data.status == 1) {
+                                    layer.msg('抽取成功', {icon: 1});
+                                    window.setTimeout("javascript:location.href='"+ data.info +"'", 2000);
+                                } else {
+                                    layer.msg(data.info, {icon: 2});
+                                }
+                            }
+                        });
+                    }
+                    return false;
+                });
+                return false;
+			}
+			$('#feed_id').val(id)
+			$('#dialog_feedback').fadeIn(200);
+			$('#dialog_feedback').find('.weui-half-screen-dialog').addClass('weui-half-screen-dialog_show');
+		});
+	});
+
+
+	layui.use(['laydate', 'laypage', 'layer', 'table', 'form', 'upload', 'element'], function() {
+        var laydate = layui.laydate //日期
+            ,laypage = layui.laypage //分页
+            ,layer = layui.layer //弹层
+            ,element = layui.element; //元素操作 等等...
+
+
+			// 预览图片
+		$("body").on('click','.btn-del',function(){
+			var id	=	$(this).data("del");
+			if(!id){
+				layer.alert("没有选择删除得记录");
+				return;
+			}
+			
+			layer.confirm('删除后有可能还会抽中本纸条，谨慎删除记录，不删除就不会，还会失去更换纸条的权利。', {
+				btn: ['确定', '取消']
+			}, function () {
+				$.ajax({
+					type: 'POST',
+					url: "/app/index.php?i=1&c=entry&do=index&m=vp_ph&cmd=btndel",
+					data:{id:id},
+					success:function (res) {
+						var json	= JSON.parse(res);
+						console.log(json);
+						if(json.code == 0){
+							layer.close(layer.index);
+							layer.msg(json.msg);
+							location.reload();
+						}else{
+							layer.close(layer.index);
+							layer.msg(json.msg);
+						}
+						
+					}
+				});
+			}, function () {
+			
+			});
+			
+		});
+    });
+</script>
+	<script>var imgs = document.getElementsByTagName('img');for(var i=0, len=imgs.length; i < len; i++){imgs[i].onerror = function() {if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {this.src = this.src.indexOf('http://06iategbo.xn--gmq9bx86buuog33af0n.xn--xhq521b/attachment/') == -1 ? this.src.replace('http://wszasd.xn--lms17gwych1ah8prxyri0c.xn--fiqs8s/uploads/', 'http://06iategbo.xn--gmq9bx86buuog33af0n.xn--xhq521b/attachment/') : this.src.replace('http://06iategbo.xn--gmq9bx86buuog33af0n.xn--xhq521b/attachment/', 'http://wszasd.xn--lms17gwych1ah8prxyri0c.xn--fiqs8s/uploads/');this.setAttribute('check-src', true);}}};</script><script type="text/javascript" src="http://06iategbo.xn--gmq9bx86buuog33af0n.xn--xhq521b/app/index.php?i=1&c=utility&a=visit&do=showjs&m=vp_ph"></script></body>
+</html>
